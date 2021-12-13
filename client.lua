@@ -50,7 +50,7 @@ Citizen.CreateThread(function()
 	while true do
 		local ped = PlayerPedId()
 
-		if coords ~= vector3(0.0, 0.0, 0.0) then
+		if coords ~= vector3(0.0, 0.0, 0.0) and coords ~= nil then
 			DisablePlayerFiring(128, true)
 			DrawText3Ds(coords, Config.Icon, Config.Size)
 		else
